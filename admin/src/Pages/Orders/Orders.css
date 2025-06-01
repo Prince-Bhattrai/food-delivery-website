@@ -1,0 +1,107 @@
+.order {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.order h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.order-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+ 
+}
+
+.order-item:hover {
+  transform: translateY(-4px);
+}
+
+.order-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 20px;
+  
+}
+
+.order-item > div {
+  flex: 1;
+}
+
+.order-item-food {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-item-name {
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #2e2e2e;
+}
+
+.order-item-address {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.order-item-phone {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.order-item-phone p {
+  margin: 4px 0;
+}
+
+.order-item select {
+  background-color: #ffe8e4;
+  border: 1px solid tomato;
+  width: max(10vw, 120px);
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+  transition: border 0.2s ease;
+}
+
+.order-item select:hover {
+  border-color: #ff6347;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item img {
+    margin-bottom: 15px;
+  }
+}
