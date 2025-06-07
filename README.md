@@ -75,5 +75,4 @@ This is a complete **Food Delivery Web Application** built with the MERN stack (
 
 ---
 
-## Folder Structure
 
